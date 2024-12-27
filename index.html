@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTySFWpyJof+bN4JqDTyiG5s5hvGURBrML1FJBcQyymsVDrE56ozjgjERLKUfW5tAq571jb+q5Vt4Fw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Ali <span>Portfolio</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Dark Mode Toggle -->
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <label for="dark-mode-toggle"></label>
+                </div>
+                <i class="fas fa-sun"></i>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="home-content" data-aos="fade-up">
+                <h1>Hi, I'm Zeeshan Ali</h1>
+                <p>Pursuing Bachelor's in IT | Aspiring Web Developer</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 data-aos="fade-down">About Me</h2>
+            <div class="about-content" data-aos="fade-up">
+                <img src="images/IMG_20241223_204052_414.webp" alt="Ali's Photo" data-aos="zoom-in">
+                <div class="about-text">
+                    <p>I'm Ali from Kashmir, currently pursuing a Bachelor's degree in Information Technology. I'm passionate about web development and artificial intelligence. With skills in prompt engineering, Python, HTML, CSS, Java, and C, I strive to build innovative solutions that make a difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 data-aos="fade-down">Skills</h2>
+            <div class="skills-grid" data-aos="fade-up">
+                <div class="skill" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Prompt Engineering</h3>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-code"></i>
+                    <h3>HTML & CSS</h3>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fas fa-cube"></i>
+                    <h3>C</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 data-aos="fade-down">Projects</h2>
+            <div class="projects-grid" data-aos="fade-up">
+                <!-- Project 1 -->
+                <div class="project" data-aos="flip-left" data-aos-delay="100">
+                    <img src="images/pexels-pixabay-270408.jpg" alt="Project One">
+
+                    <h3>Portfolio</h3>
+                    <p>I created my portfolio using HTML, CSS, and JavaScript to showcase my projects and skills with a responsive and interactive design.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- Project 2 -->
+
+
+                <!-- <div class="project" data-aos="flip-left" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/400x200" alt="Project Two">
+                    <h3>Project Two</h3>
+                    <p>Brief description of Project Two. Highlighting the technologies used and the purpose of the project.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div> -->
+
+                
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <div class="container">
+            <h2 data-aos="fade-down">Interests</h2>
+            <div class="interests-content" data-aos="fade-up">
+                <i class="fas fa-robot"></i>
+                <p>I have a keen interest in Artificial Intelligence and its applications across various domains. I enjoy exploring the latest advancements in AI and integrating them into my projects to create intelligent and efficient solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 data-aos="fade-down">Contact Me</h2>
+            <form action="#" method="post" data-aos="fade-up">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Ali. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Library JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- JavaScript for Dark Mode Toggle and Mobile Menu -->
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false, /* Changed from true to false to allow animations on every scroll */
+        });
+    </script>
+    
+</body>
+</html>
